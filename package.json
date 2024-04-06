@@ -1,0 +1,14 @@
+{
+  "name": "data-structures-n-algorithms",
+  "version": "1.0.0",
+  "author": "Kien Alang <alangkien96@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn run test"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.4"
+  }
+}
