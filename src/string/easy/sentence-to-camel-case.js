@@ -15,6 +15,18 @@
  * // Input: "Here comes the garden"
  * // Output: "HereComesTheGarden"
  */
-function toCamelCase(sentence) {
-	// function implementation here
+export function toCamelCase(sentence) {
+	let isPrevSpace = true
+	let name = ''
+
+	for (const letter of sentence) {
+		if (letter !== ' ') {
+			name += isPrevSpace ? letter.toLocaleUpperCase() : letter
+			isPrevSpace = false
+		} else {
+			isPrevSpace = true
+		}
+	}
+
+	return name
 }
