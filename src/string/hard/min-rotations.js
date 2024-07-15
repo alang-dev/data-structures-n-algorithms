@@ -13,6 +13,6 @@
  * // Input: s = "aaaa"
  * // Output: 1
  */
-function minRotations(s) {
+export function minRotations(s) {
 	// Function implementation will go here
 }

@@ -53,6 +53,6 @@
  * // Output: false
  * // Explanation: Strings cannot be chained to form a circle because "ijk" does not match "kji".
  */
-function canFormCircle(arr) {
+export function canFormCircle(arr) {
 	// Function implementation will go here
 }

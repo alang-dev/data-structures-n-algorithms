@@ -24,6 +24,6 @@
  * // Input: encodedString = "3[b2[ca]]"
  * // Output: "bcacabcacabcaca"
  */
-function decodeString(encodedString) {
+export function decodeString(encodedString) {
 	// Implementation will go here
 }

@@ -20,6 +20,6 @@
  * // Input: str1 = "abcabc", str2 = "abcd"
  * // Output: 4
  */
-function waysToIncreaseLCS(str1, str2) {
+export function waysToIncreaseLCS(str1, str2) {
 	// Function implementation will go here
 }

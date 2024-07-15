@@ -9,6 +9,23 @@
  * // Input: "ABC"
  * // Output: ["ABC", "AB C", "A BC", "A B C"]
  */
-function generateStringsWithSpaces(str) {
-	// function implementation here
+export function generateStringsWithSpaces(str) {
+	function generateHelper(current, index, result) {
+		if (index === str.length) {
+			result.push(current);
+			return;
+		}
+
+		// Include the current character without a space
+		generateHelper(current + str[index], index + 1, result);
+
+		// Include the current character with a space if not at the end
+		if (index < str.length - 1) {
+			generateHelper(current + str[index] + ' ', index + 1, result);
+		}
+	}
+
+	const result = [];
+	generateHelper("", 0, result);
+	return result;
 }

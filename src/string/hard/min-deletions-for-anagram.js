@@ -22,6 +22,6 @@
  * // Output: 0
  * // Explanation: Strings are already anagrams, no deletions needed.
  */
-function minDeletionsForAnagram(str1, str2) {
+export function minDeletionsForAnagram(str1, str2) {
 	// Function implementation will go here
 }

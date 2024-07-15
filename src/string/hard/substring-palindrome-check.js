@@ -21,6 +21,6 @@
  * // Explanation:
  * // All substrings in the queries are palindromes.
  */
-function substringPalindromeCheck(s, queries) {
+export function substringPalindromeCheck(s, queries) {
 	// Function implementation will go here
 }

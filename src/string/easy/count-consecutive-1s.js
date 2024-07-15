@@ -18,4 +18,19 @@
  * @returns {number} The number of binary strings of length n with consecutive 1's.
  */
 export function countConsecutiveOnes(n) {
+	if (n < 2) {
+		return 0
+	}
+
+	// TODO improve if no BigInt or toString(2)
+	let max = BigInt(2 ** n)
+	let count = 0
+	while (max > 0) {
+		const hasConsecutiveOne = max.toString(2).indexOf('11') > -1
+		count += hasConsecutiveOne ? 1 : 0
+
+		max--;
+	}
+
+	return count
 }
