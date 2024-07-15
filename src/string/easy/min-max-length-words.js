@@ -14,6 +14,33 @@
  * // Input: "GeeksforGeeks A computer Science portal for Geeks"
  * // Output: { min: "A", max: "GeeksforGeeks" }
  */
-function findMinMaxLengthWords(str) {
-	// function implementation here
+export function findMinMaxLengthWords(str) {
+	let minWord = '', maxWord = ''
+
+	let word = ''
+	for (let i = 0; i < str.length; i++) {
+		if (str.at(i) !== ' ') {
+			word += str.at(i)
+		} else {
+			if (word.length > maxWord.length) {
+				maxWord = word
+			}
+
+			if (minWord.length > word.length || minWord.length === 0) {
+				minWord = word
+			}
+
+			word = ''
+		}
+	}
+
+	if (word.length > maxWord.length) {
+		maxWord = word
+	}
+
+	if (minWord.length > word.length || minWord.length === 0) {
+		minWord = word
+	}
+
+	return {min: minWord, max: maxWord}
 }
