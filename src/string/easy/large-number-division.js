@@ -4,7 +4,7 @@
  *
  * @param {string} number - The large number represented as a string.
  * @param {number} divisor - The number to divide by.
- * @returns {number} - The result of the division.
+ * @returns {string} - The result of the division.
  *
  * @example
  * // Example 1
@@ -21,6 +21,20 @@
  * // Input: number = "1248163264128256512", divisor = 125
  * // Output: 9985306113026052
  */
-function divideLargeNumber(number, divisor) {
-	// function implementation here
+export function divideLargeNumber(number, divisor) {
+	let result = ''
+	let current = 0
+
+	for (let i = 0; i < number.length; i++) {
+		current = current * 10 + parseInt(number.at(i), 10)
+
+		if (current >= divisor) {
+			result += Math.floor(current / divisor)
+			current = current % divisor
+		} else {
+			result = result.length > 0 ? result + '0' : result
+		}
+	}
+
+	return result
 }
