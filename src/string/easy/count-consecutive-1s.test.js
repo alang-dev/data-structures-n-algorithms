@@ -1,6 +1,6 @@
 import {countConsecutiveOnes} from "./count-consecutive-1s";
 
-describe.skip('countConsecutiveOnes', () => {
+describe('countConsecutiveOnes', () => {
 	test('handles base case (n = 1)', () => {
 		expect(countConsecutiveOnes(1)).toBe(0);
 		expect(countConsecutiveOnes(0)).toBe(0);
