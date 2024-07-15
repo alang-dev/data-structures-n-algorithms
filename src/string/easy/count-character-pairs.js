@@ -16,6 +16,17 @@
  * // Input: "geeksforgeeks"
  * // Output: 31
  */
-function countCharacterPairs(s) {
-	// function implementation here
+export function countCharacterPairs(s) {
+	let count = 0
+	for (let i = 0; i < s.length; i++) {
+		for (let j = 0; j < s.length; j++) {
+			if (s.at(i) === s.at(j)) {
+				count++;
+			}
+		}
+	}
+
+	return count
 }
+
+// Improve: Use Array to hold the frequency of each ASCII character
