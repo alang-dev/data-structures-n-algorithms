@@ -1,4 +1,4 @@
-import {searchPattern} from "./PatternSearching";
+import {searchPattern} from "./pattern-searching";
 import * as assert from "node:assert";
 
 describe('PatternSearching', () => {
