@@ -16,6 +16,6 @@
  * // Output: 1
  * // Explanation: Possible partitions are ["Dog cat"]. Minimum break is 1.
  */
-function minStringBreaks(s, dictionary) {
+export function minStringBreaks(s, dictionary) {
 	// Function implementation will go here
 }

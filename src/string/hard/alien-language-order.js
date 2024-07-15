@@ -15,6 +15,6 @@
  * // Output: "cab"
  * // Explanation: Characters order based on the given dictionary of words.
  */
-function alienLanguageOrder(words) {
+export function alienLanguageOrder(words) {
 	// Function implementation will go here
 }

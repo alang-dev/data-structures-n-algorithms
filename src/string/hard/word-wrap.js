@@ -24,6 +24,6 @@
  * // Line 2: From word no. 2 to 2
  * // Line 3: From word no. 3 to 3
  */
-function wordWrap(wordLengths) {
+export function wordWrap(wordLengths) {
 	// Implementation will go here
 }

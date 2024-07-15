@@ -40,6 +40,6 @@
  * //   [1, 2, 3, 4]   // Subset with 1, 2, 3, and 4
  * // ]
  */
-function generatePowerSet(set) {
+export function generatePowerSet(set) {
 	// Function implementation will go here
 }

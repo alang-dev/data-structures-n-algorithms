@@ -16,6 +16,6 @@
  * // Output: 2
  * // Explanation: We need to change two characters in either s1 or s2 to make them identical.
  */
-function minManipulationsForAnagram(s1, s2) {
+export function minManipulationsForAnagram(s1, s2) {
 	// Function implementation will go here
 }

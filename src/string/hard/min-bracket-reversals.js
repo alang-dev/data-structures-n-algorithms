@@ -15,6 +15,6 @@
  * // Output: "Can't be made balanced using reversals"
  * // Explanation: No amount of reversals can make this expression balanced.
  */
-function minBracketReversals(exp) {
+export function minBracketReversals(exp) {
 	// Implementation will go here
 }
