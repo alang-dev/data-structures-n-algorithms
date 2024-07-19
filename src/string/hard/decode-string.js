@@ -23,7 +23,36 @@
  * // Example 4:
  * // Input: encodedString = "3[b2[ca]]"
  * // Output: "bcacabcacabcaca"
+ * '[b][a]'
  */
 export function decodeString(encodedString) {
-	// Implementation will go here
+	const strStack = []
+	const numStack = []
+
+	let left = ''
+	for (const item of encodedString) {
+		if (item !== '[' && item !== ']') {
+			left += item
+		} else if (item === '[') {
+			let num = ''
+			let i = left.length - 1
+			while (i >= 0) {
+				if (/^\d*$/.test(left.at(i))) {
+					num = left.at(i) + num
+				} else {
+					break
+				}
+				i--;
+			}
+			numStack.push(Number(num) || 1)
+			strStack.push(left.substring(0, i + 1) || '')
+
+			left = ''
+		} else { // item === ']'
+			left = strStack.pop() + Array.from({length: numStack.pop()}, () => left)
+				.join('')
+		}
+	}
+
+	return left
 }
