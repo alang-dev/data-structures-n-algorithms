@@ -54,5 +54,38 @@
  * // Explanation: Strings cannot be chained to form a circle because "ijk" does not match "kji".
  */
 export function canFormCircle(arr) {
-	// Function implementation will go here
+	if (arr.length < 1) {
+		return false
+	}
+	if (arr.length === 1) {
+		return true
+	}
+
+	const circle = [arr[0]]
+	const remain = arr.slice(1)
+
+	let prevHead = circle[0].at(circle[0].length - 1)
+	let i = 1
+
+	while (i < arr.length) {
+		const foundIndex = remain.findIndex(current => {
+			const isHeadTailSame = prevHead === current.at(0)
+
+			if (isHeadTailSame) {
+				prevHead = current.at(current.length - 1)
+			}
+
+			return isHeadTailSame
+		})
+
+		if (foundIndex === -1) {
+			return false
+		}
+
+		remain.splice(foundIndex, 1);
+
+		i++;
+	}
+
+	return remain.length === 0
 }

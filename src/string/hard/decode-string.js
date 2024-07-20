@@ -23,7 +23,6 @@
  * // Example 4:
  * // Input: encodedString = "3[b2[ca]]"
  * // Output: "bcacabcacabcaca"
- * '[b][a]'
  */
 export function decodeString(encodedString) {
 	const strStack = []
