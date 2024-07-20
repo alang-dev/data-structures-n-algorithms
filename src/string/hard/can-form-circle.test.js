@@ -1,6 +1,6 @@
 import { canFormCircle } from './can-form-circle';
 
-describe.skip('canFormCircle', () => {
+describe('canFormCircle', () => {
 	test('Example 1', () => {
 		const input = ["geek", "king"];
 		const output = true;
