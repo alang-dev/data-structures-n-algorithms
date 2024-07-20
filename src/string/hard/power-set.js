@@ -41,5 +41,19 @@
  * // ]
  */
 export function generatePowerSet(set) {
-	// Function implementation will go here
+	const powerSet = [];
+	const totalSubsets = 1 << set.length; // 2^n, where n is the number of elements in the set
+
+	for (let i = 0; i < totalSubsets; i++) {
+		const subset = [];
+		for (let j = 0; j < set.length; j++) {
+			// TODO I dont understand
+			if (i & (1 << j)) { // Check if the j-th bit in i is set
+				subset.push(set[j]);
+			}
+		}
+		powerSet.push(subset);
+	}
+
+	return powerSet;
 }
