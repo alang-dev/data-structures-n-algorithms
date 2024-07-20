@@ -14,6 +14,6 @@
  * // Input: "))(({}{"
  * // Output: "No"
  */
-function isBalancedParentheses(str) {
+export function isBalancedParentheses(str) {
 	// Function implementation
 }

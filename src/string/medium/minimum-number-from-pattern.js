@@ -31,7 +31,7 @@
  */
 
 // Placeholder function for implementation
-function minimumNumberFromPattern(pattern) {
+export function minimumNumberFromPattern(pattern) {
 	// Implementation goes here
 	// This function should generate and return the minimum number based on the input pattern.
 }

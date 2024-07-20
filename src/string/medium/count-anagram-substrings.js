@@ -16,6 +16,6 @@
  * // Output: 4
  * // Explanation: Total substrings which are anagram to each other: {"g", "g"}, {"e", "e"}, {"ge", "eg"}, {"geg", "geg"}
  */
-function countAnagramSubstrings(str) {
+export function countAnagramSubstrings(str) {
 	// function implementation here
 }

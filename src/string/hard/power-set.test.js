@@ -1,6 +1,6 @@
 import {generatePowerSet} from "./power-set";
 
-describe.skip('generatePowerSet', () => {
+describe('generatePowerSet', () => {
 	test('Example 1', () => {
 		const set = ['a', 'b', 'c'];
 		const output = [
@@ -55,14 +55,14 @@ describe.skip('generatePowerSet', () => {
 		const set = ['a', 'a', 'b'];
 		const output = [
 			[],
-			['a'],
-			['b'],
-			['a', 'b'],
-			['a', 'a'],
-			['a', 'a', 'b'],
-			['a', 'b', 'b'],
-			['a', 'a', 'b', 'b']
-		];
+			["a"],
+			["a"],
+			["a", "a"],
+			["b"],
+			["a", "b"],
+			["a", "b"],
+			["a", "a", "b"]
+		]
 		expect(generatePowerSet(set)).toEqual(output);
 	});
 
@@ -72,12 +72,12 @@ describe.skip('generatePowerSet', () => {
 			[],
 			[{}],
 			[null],
-			[1],
 			[{}, null],
+			[1],
 			[{}, 1],
 			[null, 1],
 			[{}, null, 1]
-		];
+		]
 		expect(generatePowerSet(set)).toEqual(output);
 	});
 });

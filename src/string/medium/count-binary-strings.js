@@ -16,6 +16,6 @@
  * // Output: 5
  * // Explanation: The 5 strings are "000", "001", "010", "100", "101".
  */
-function countBinaryStrings(N) {
+export function countBinaryStrings(N) {
 	// function implementation here
 }

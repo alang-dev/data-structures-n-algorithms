@@ -15,6 +15,6 @@
  * // For Query 2, index 8 and index 13 have same element i.e 'g'.
  * // For Query 3, index 6 = 'o' and index 15 = 'e' which are not same.
  */
-function repeatedStringQueries(X, queries) {
+export function repeatedStringQueries(X, queries) {
 	// function implementation
 }

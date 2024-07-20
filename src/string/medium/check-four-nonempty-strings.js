@@ -16,6 +16,6 @@
  * // Output: "No"
  * // Explanation: It's not possible to split into four distinct non-empty substrings.
  */
-function canSplitIntoFourStrings(str) {
+export function canSplitIntoFourStrings(str) {
 	// Function implementation
 }

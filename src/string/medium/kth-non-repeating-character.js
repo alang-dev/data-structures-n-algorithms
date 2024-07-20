@@ -21,6 +21,6 @@
  * // Input: "geeksforgeeks", 4
  * // Output: "Less than k non-repeating characters in input."
  */
-function findKthNonRepeatingCharacter(str, k) {
+export function findKthNonRepeatingCharacter(str, k) {
 	// function implementation here
 }

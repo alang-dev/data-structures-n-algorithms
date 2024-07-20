@@ -48,4 +48,10 @@ describe('canFormCircle', () => {
 		const output = false;
 		expect(canFormCircle(input)).toBe(output);
 	});
+
+	test('Example 9', () => {
+		const input = [];
+		const output = false;
+		expect(canFormCircle(input)).toBe(output);
+	});
 });
