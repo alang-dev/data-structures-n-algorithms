@@ -18,6 +18,6 @@
  * // Output: "Yes"
  * // Explanation: The string can be segmented as "i like samsung" or "i like sam sung".
  */
-function canSegmentString(str, dictionary) {
+export function canSegmentString(str, dictionary) {
 	// function implementation
 }

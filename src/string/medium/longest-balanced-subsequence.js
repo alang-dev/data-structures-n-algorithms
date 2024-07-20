@@ -17,7 +17,7 @@
  * @returns {number} The length of the longest balanced subsequence.
  */
 
-function findLongestBalancedSubsequenceLength(S) {
+export function findLongestBalancedSubsequenceLength(S) {
 	// Implementation goes here
 	// This function should return the length of the longest balanced subsequence in the input string S.
 }

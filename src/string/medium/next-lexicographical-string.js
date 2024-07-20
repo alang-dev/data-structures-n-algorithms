@@ -19,6 +19,6 @@
  * // Input: "zzz"
  * // Output: "zza"
  */
-function nextLexicographicalString(str) {
+export function nextLexicographicalString(str) {
 	// function implementation
 }

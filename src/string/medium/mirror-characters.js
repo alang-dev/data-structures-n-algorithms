@@ -6,6 +6,6 @@
  * @param {string} str - The input string to mirror characters.
  * @returns {string} - The modified string after mirroring.
  */
-function mirrorCharacters(N, str) {
+export function mirrorCharacters(N, str) {
 	// Function implementation will go here
 }

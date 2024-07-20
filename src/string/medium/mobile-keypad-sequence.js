@@ -16,7 +16,7 @@
  */
 
 // Placeholder function for implementation
-function sentenceToKeypadSequence(sentence) {
+export function sentenceToKeypadSequence(sentence) {
 	// Implementation goes here
 	// This function should convert the sentence into its equivalent mobile numeric keypad sequence.
 }

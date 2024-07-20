@@ -22,7 +22,7 @@
  */
 
 // Placeholder function for implementation
-function minSwapsToBalance(str) {
+export function minSwapsToBalance(str) {
 	// Implementation goes here
 	// This function should calculate and return the minimum number of swaps required to balance the string.
 }

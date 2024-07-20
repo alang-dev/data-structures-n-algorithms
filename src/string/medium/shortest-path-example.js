@@ -7,7 +7,7 @@
  * @param {string} inputString - The input string to be typed.
  * @returns {string[]} - Array of instructions representing the shortest path.
  */
-function findShortestPath(inputString) {
+export function findShortestPath(inputString) {
 	// Example: Input "GEEK"
 	// Output: ["Move Down", "Move Right", "Press OK", "Move Up", "Move Right",
 	//          "Move Right", "Move Right", "Press OK", "Press OK", "Move Left",

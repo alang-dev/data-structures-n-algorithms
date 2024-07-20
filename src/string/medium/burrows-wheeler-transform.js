@@ -33,7 +33,7 @@
  */
 
 // Placeholder function for implementation
-function burrowsWheelerTransform(text) {
+export function burrowsWheelerTransform(text) {
 	// Implementation goes here
 	// This function should perform the Burrows-Wheeler Transform on the input text.
 }

@@ -15,6 +15,6 @@
  * // Input: "Mr John Smith   ", 13
  * // Output: "Mr%20John%20Smith"
  */
-function urlify(str, trueLength) {
+export function urlify(str, trueLength) {
 	// function implementation here
 }
