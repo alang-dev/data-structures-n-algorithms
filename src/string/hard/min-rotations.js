@@ -14,5 +14,16 @@
  * // Output: 1
  */
 export function minRotations(s) {
-	// Function implementation will go here
+	let rotationCount = 0;
+	let rotatedStr = s;
+	while (rotationCount < s.length) {
+		rotationCount++;
+
+		rotatedStr = rotatedStr.substring(1) + rotatedStr.at(0)
+		if (rotatedStr === s) {
+			return rotationCount
+		}
+	}
+
+	return rotationCount
 }
