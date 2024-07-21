@@ -1,6 +1,6 @@
 import { minRotations } from './min-rotations';
 
-describe.skip('minRotations', () => {
+describe('minRotations', () => {
 	test('Example 1', () => {
 		const s = "geeks";
 		const output = 5;
@@ -33,7 +33,7 @@ describe.skip('minRotations', () => {
 
 	test('Longer string with repeated segments', () => {
 		const s = "abababab";
-		const output = 4;
+		const output = 2;
 		expect(minRotations(s)).toBe(output);
 	});
 });
