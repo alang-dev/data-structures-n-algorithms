@@ -22,5 +22,21 @@
  * // Output: "Less than k non-repeating characters in input."
  */
 export function findKthNonRepeatingCharacter(str, k) {
-	// function implementation here
+	const repeated = new Set()
+	const nonRepeated = new Set()
+
+	for (const item of str) {
+		if (!repeated.has(item)) {
+			nonRepeated.add(item)
+			repeated.add(item)
+		} else {
+			nonRepeated.delete(item)
+		}
+	}
+
+	if (nonRepeated.size < k) {
+		return 'Less than k non-repeating characters in input.'
+	}
+
+	return Array.from(nonRepeated).at(k - 1)
 }

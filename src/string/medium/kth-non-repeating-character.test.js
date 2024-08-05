@@ -1,6 +1,6 @@
 import { findKthNonRepeatingCharacter } from './kth-non-repeating-character';
 
-describe.skip('findKthNonRepeatingCharacter', () => {
+describe('findKthNonRepeatingCharacter', () => {
 	test('should find the kth non-repeating character in the string', () => {
 		expect(findKthNonRepeatingCharacter('geeksforgeeks', 3)).toBe('r');
 		expect(findKthNonRepeatingCharacter('geeksforgeeks', 2)).toBe('o');

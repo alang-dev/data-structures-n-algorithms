@@ -14,6 +14,31 @@
  * // Input: "))(({}{"
  * // Output: "No"
  */
+
+const PARENTHESES = {
+	')': '(',
+	']': '[',
+	'}': '{'
+}
+
 export function isBalancedParentheses(str) {
-	// Function implementation
+	const parentheses = [];
+	for (const item of str) {
+		if (isClosing(item)) {
+			const opening = parentheses.pop();
+			const isPair = PARENTHESES[item] === opening;
+
+			if (!isPair) {
+				return 'No'
+			}
+		} else {
+			parentheses.push(item);
+		}
+	}
+
+	return parentheses.length === 0 ? 'Yes' : 'No'
+}
+
+function isClosing(parentThese) {
+	return !!PARENTHESES[parentThese];
 }

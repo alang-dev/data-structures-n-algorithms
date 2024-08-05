@@ -1,6 +1,6 @@
 import {isBalancedParentheses} from "./balanced-parentheses";
 
-describe.skip('isBalancedParentheses', () => {
+describe('isBalancedParentheses', () => {
 	test('should return "Yes" for balanced parentheses', () => {
 		expect(isBalancedParentheses('(())[]')).toBe('Yes');
 		expect(isBalancedParentheses('({[]})')).toBe('Yes');
