@@ -16,5 +16,27 @@
  * // For Query 3, index 6 = 'o' and index 15 = 'e' which are not same.
  */
 export function repeatedStringQueries(X, queries) {
-	// function implementation
+	if (X.length === 0) {
+		return ["No"]
+	}
+
+	return queries.map(([i, j]) => {
+		const leftIndex = findIndex(i, X);
+		const rightIndex = findIndex(j, X);
+
+		return X.at(leftIndex) === X.at(rightIndex) ? "Yes" : "No";
+	})
+}
+
+/**
+ *
+ * @param target {number}
+ * @param str {string}
+ */
+function findIndex(target, str) {
+	if (target >= str.length) {
+		return target % str.length
+	}
+
+	return target
 }
