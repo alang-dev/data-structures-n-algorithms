@@ -33,18 +33,9 @@ export function decodeString(encodedString) {
 		if (item !== '[' && item !== ']') {
 			left += item
 		} else if (item === '[') {
-			let num = ''
-			let i = left.length - 1
-			while (i >= 0) {
-				if (/^\d*$/.test(left.at(i))) {
-					num = left.at(i) + num
-				} else {
-					break
-				}
-				i--;
-			}
-			numStack.push(Number(num) || 1)
-			strStack.push(left.substring(0, i + 1) || '')
+			const [num, text] = splitTextNum(left)
+			numStack.push(num)
+			strStack.push(text)
 
 			left = ''
 		} else { // item === ']'
@@ -54,4 +45,27 @@ export function decodeString(encodedString) {
 	}
 
 	return left
+}
+
+/**
+ *
+ * @param str {string}
+ * @return {[number, string]} Default value is [1, '']
+ */
+function splitTextNum(str) {
+	let num = ''
+	let i = str.length - 1
+	while (i >= 0) {
+		if (/^\d*$/.test(str.at(i))) {
+			num = str.at(i) + num
+		} else {
+			break
+		}
+
+		i--;
+	}
+
+	const text = str.substring(0, i + 1) || ''
+
+	return [Number(num) || 1, text]
 }
