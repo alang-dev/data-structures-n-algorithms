@@ -1,6 +1,6 @@
 import { countBinaryStrings } from './count-binary-strings';
 
-describe.skip('countBinaryStrings', () => {
+describe('countBinaryStrings', () => {
 	test('should count all possible distinct binary strings of length N without consecutive 1\'s', () => {
 		expect(countBinaryStrings(2)).toBe(3);
 		expect(countBinaryStrings(3)).toBe(5);
