@@ -22,12 +22,12 @@ export function countConsecutiveOnes(n) {
 		return 0
 	}
 
-	// TODO improve if no BigInt or toString(2)
-	let max = BigInt(2 ** n)
+	let max = (1 << n)
 	let count = 0
 	while (max > 0) {
-		const hasConsecutiveOne = max.toString(2).indexOf('11') > -1
-		count += hasConsecutiveOne ? 1 : 0
+		if ((max & (max >> 1)) !== 0) {
+			count++;
+		}
 
 		max--;
 	}
